@@ -4,6 +4,7 @@ import Post from '../Post/components';
 import Stories from '../Stories';
 const data = [
   {
+    id: 1,
     user: {
       imageUri: 'https://images.indianexpress.com/2019/01/uri-movie-review-759.jpg',
       name: 'Anay',
@@ -14,6 +15,7 @@ const data = [
     postedAt: '6 minutes ago',
   },
   {
+    id: 2,
     user: {
       imageUri: 'https://images.indianexpress.com/2019/01/uri-movie-review-759.jpg',
       name: 'Anay',
@@ -24,6 +26,7 @@ const data = [
     postedAt: '6 minutes ago',
   },
   {
+    id: 3,
     user: {
       imageUri: 'https://images.indianexpress.com/2019/01/uri-movie-review-759.jpg',
       name: 'Anay',
@@ -42,6 +45,7 @@ const Feed = () => {
       showsVerticalScrollIndicator={false}
       ListHeaderComponent={() => <Stories />}
       renderItem={({ item }) => <Post post={item} />}
+      keyExtractor={({ id }) => id.toString()}
     />
   );
 };
