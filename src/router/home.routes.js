@@ -5,6 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import HomeScreen from '../screens/HomeScreen';
 
 import React from 'react';
+import StoryScreen from '../screens/StoryScreen';
 
 const HomeRoutes = () => {
   const HomeStack = createNativeStackNavigator();
